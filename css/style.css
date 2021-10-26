@@ -1,0 +1,63 @@
+:root {
+   --basic-black:#000000;
+   --basic-grey:#727272;
+   --light-grey:#EEEFF1;
+   --basic-blue:#34547A;
+  
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--basic-grey)
+}
+
+body {
+    margin: 0;
+}
+    
+.section-title {
+    color: var(--basic-black);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+}
+
+/* ------ header ------ */
+.main-header {
+    background-color: var(--light-grey)
+}
+.main-logo {
+    color: var(--basic-blue);
+    font-family: 'Revalia', cursive;
+    font-size: 48px;
+    line-height: 60px;
+    text-decoration: none;
+}
+
+.main-nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav-link {
+    text-decoration: none;
+    color: var(--basic-black);
+}
+/* ------ !header ------ */
+
+/* ------ promo ------ */
+.promo {
+    background-color: var(--light-grey);
+}
+.promo-title {
+    font-size: 48px;
+    line-height: 79px;
+}
+/* ------ !promo ------ */
