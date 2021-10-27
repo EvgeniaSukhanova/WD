@@ -2,7 +2,10 @@
    --basic-black:#000000;
    --basic-grey:#727272;
    --light-grey:#EEEFF1;
+   --dark-grey:#5F5D5D;
    --basic-blue:#34547A;
+   --basic-white:#FFFFFF;
+  
   
 }
 
@@ -49,6 +52,8 @@ body {
 .main-nav-link {
     text-decoration: none;
     color: var(--basic-black);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 /* ------ !header ------ */
 
@@ -56,8 +61,104 @@ body {
 .promo {
     background-color: var(--light-grey);
 }
+
 .promo-title {
     font-size: 48px;
     line-height: 79px;
 }
+
+.promo-write-me {
+    color:var(--basic-white);
+    letter-spacing: 0.1em;
+    background-color: var(--basic-blue);
+    text-decoration: none;
+    text-transform: uppercase;
+}
 /* ------ !promo ------ */
+
+
+/* ------ advantages ------ */
+.adv-list {
+    color: var(--basic-white);
+    background-color: var(--basic-blue);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.adv-link-40 {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+}
+/* ------ !advantages ------ */
+
+
+/* ------ process ------ */
+.process {
+    background-color:var(--light-grey)
+}
+/* ------ !process ------ */
+
+
+/* ------ skills ------ */
+.skills-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+/* ------ !skills ------ */
+
+/* ------ my-works-gallery ------ */
+.my-works-gallery-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+/* ------ !my-works-gallery ------ */
+
+
+/* ------ our-clients ------ */
+.our-clients-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+/* ------ !our-clients ------ */
+
+
+/* ------ main-form ------ */
+.main-form {
+    background-color: var(--light-grey);
+}
+.main-form-window {
+    font-size: 14px;
+    line-height: 23px;
+    color: var(--dark-grey);
+}
+.main-form-but-sbmt {
+    letter-spacing: 0.15em;
+    color: var(--basic-white);
+    background-color: var(--basic-blue);
+    text-transform: uppercase;
+}
+/* ------ !main-form ------ */
+
+/* ------ footer ------ */
+.footer {
+    background-color: var(--basic-blue);
+    color: var(--basic-white);
+    font-size: 13px;
+    line-height: 21px;
+}
+.footer-name {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+}
+.footer-social-media-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+}
+/* ------ !footer ------ */
