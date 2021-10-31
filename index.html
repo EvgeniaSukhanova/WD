@@ -12,82 +12,106 @@
 </head>
 <body>
     <header class="main-header">
-        <nav>
+        <nav class="main-nav container">
             <a class="main-logo" href="#">WD</a>
            <ul class="main-nav-list">
-               <li><a class="main-nav-link" href="#">Главная</a></li>
-               <li><a class="main-nav-link"href="#">Об авторе</a></li>
-               <li><a class="main-nav-link"href="#">Работы</a></li>
-               <li><a class="main-nav-link"href="#">Процесс</a></li>
-               <li><a class="main-nav-link"href="#">Контакты</a></li>
+               <li class="main-nav-item"><a class="main-nav-link" href="#">Главная</a></li>
+               <li class="main-nav-item"><a class="main-nav-link"href="#">Об авторе</a></li>
+               <li class="main-nav-item"><a class="main-nav-link"href="#">Работы</a></li>
+               <li class="main-nav-item"><a class="main-nav-link"href="#">Процесс</a></li>
+               <li class="main-nav-item"><a class="main-nav-link"href="#">Контакты</a></li>
            </ul> 
         </nav>  
     </header>
     <main>
-        <h1>Страница-портфолио обо мне</h1>
+        <h1 class="visually-hidden">Страница-портфолио обо мне</h1>
         <section class="promo">
-            <img src="./img/laptop.png" width="357" height="234" alt="иконка открытого ноутбука">
-            <h2 class="section-title promo-title">Дизайн и верстка</h2>
-            <p>Lorem Ipsum - это текст-"рыба",
-                часто используемый в печати и вэб-дизайне.
-                Lorem Ipsum является 
-                стандартной "рыбой" для текстов на 
-                латинице с начала XVI века.</p>
-                <a class="promo-write-me" href="#">Написать мне</a>
+            <div class="promo-wrap container">
+                <div class="promo-image">
+                    <img src="./img/laptop.png" width="357" height="234" alt="иконка открытого ноутбука">
+                </div>
+                <div class="promo-content">
+                    <h2 class="section-title promo-title">Дизайн и верстка</h2>
+                    <p class="promo-text">Lorem Ipsum - это текст-"рыба",
+                    часто используемый в печати и вэб-дизайне.
+                    Lorem Ipsum является 
+                    стандартной "рыбой" для текстов на 
+                    латинице с начала XVI века.</p>
+                    <a class="btn-primary btn-big" href="#">Написать мне</a>
+                </div>  
+            </div>
         </section>
-        <section>
+        <section class="container-small about-me">
             <h2 class="section-title">Обо мне</h2>
-            <p>Lorem Ipsum - это текст-"рыба",
-                часто используемый в печати и вэб-дизайне.
-                Lorem Ipsum является 
-                стандартной "рыбой" для текстов на 
-                латинице с начала XVI века.</p>
+            <p>Lorem Ipsum - это текст-"рыба", часто используемый
+                    в печати и вэб-дизайне. Lorem Ipsum является стандартной
+                    "рыбой" для текстов на латинице с начала XVI века.
+            </p>
         </section>
         <section class="advantages">
-            <h2 class="section-title">Мои преимущества</h2>
-            <ul class="adv-list">
-                <li>
+            <h2 class="visually-hidden">Мои преимущества</h2>
+            <ul class="container adv-list">
+                <li class="advantages-item">
                     <img src="./img/icon.png" width="50" height="50" alt="иконка листик с карандашом и линейкой-треугольником">
-                    <span class="adv-link-40">40+</span><span>проектов</span>
+                    <span><span class="advantages-strong">40+</span><br>проектов</span>
                 </li>
-                <li>
+                <li class="advantages-item">
                     <img src="./img/icon.png" width="50" height="50" alt="иконка листик с карандашом и линейкой-треугольником">
-                    <span class="adv-link-40">40+</span><span>проектов</span>
+                    <span><span class="advantages-strong">40+</span><br>проектов</span>
                 </li>
-                <li>
+                <li class="advantages-item">
                     <img src="./img/icon.png" width="50" height="50" alt="иконка листик с карандашом и линейкой-треугольником">
-                    <span class="adv-link-40">40+</span><span>проектов</span>
+                    <span><span class="advantages-strong">40+</span><br>проектов</span>
                 </li>
-                <li>
+                <li class="advantages-item">
                     <img src="./img/icon.png" width="50" height="50" alt="иконка листик с карандашом и линейкой-треугольником">
-                    <span class="adv-link-40">40+</span><span>проектов</span>
+                    <span><span class="advantages-strong">40+</span><br>проектов</span>
                 </li>
-                <li>
+                <li class="advantages-item">
                     <img src="./img/icon.png" width="50" height="50" alt="иконка листик с карандашом и линейкой-треугольником">
-                    <span class="adv-link-40">40+</span><span>проектов</span>
+                    <span><span class="advantages-strong">40+</span><br>проектов</span>
                 </li>
-                <li>
+                <li class="advantages-item">
                     <img src="./img/icon.png" width="50" height="50" alt="иконка листик с карандашом и линейкой-треугольником">
-                    <span class="adv-link-40">40+</span><span>проектов</span>
+                    <span><span class="advantages-strong">40+</span><br>проектов</span>
                 </li>
             </ul>
         </section>
-        <section class="skills">
-            <h2 class="section-title">Мои навыки</h2>
-            <ul class="skills-list">
-                <li>Adobe Photoshop</li>
-                <li>Adobe Photoshop</li>
-                <li>Adobe Photoshop</li>
-            </ul>
-            <img src="./img/foto.jpg" width="555" height="450" alt="фото мужчины">
+        <section class="skills container">
+            <div class="skills-content">
+                <h2 class="section-title skills-title">Мои навыки</h2>
+                <ul class="skills-list">
+                    <li>Adobe Photoshop
+                        <div class="progress">
+                            <div style="width: 80%;"></div>
+                        </div>
+                    </li>
+                    <li>Adobe Photoshop
+                        <div class="progress">
+                            <div style="width: 70%;"></div>
+                        </div>
+                    </li>
+                    <li>Adobe Photoshop
+                        <div class="progress">
+                            <div style="width: 60%;"></div>
+                        </div> 
+                    </li>
+                </ul>
+            </div>
+            <div class="skills-img">
+                <img src="./img/foto.jpg" width="555" height="450" alt="фото мужчины">
+            </div>
         </section>
-        <section class="process">
-            <h2 class="section-title">Как я работаю</h2>
-            <p>Lorem Ipsum - это текст-"рыба", часто используемый
+        <section class="how-work">
+            <div class="container-small how-work_content">
+                <h2 class="section-title">Как я работаю</h2>
+                <p>Lorem Ipsum - это текст-"рыба", часто используемый
                 в печати и вэб-дизайне. Lorem Ipsum является стандартной
-                 "рыбой" для текстов на латинице с начала XVI века.</p>
-                 <iframe width="560" height="315" src="https://www.youtube.com/embed/8weefau2E60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                 <button>video</button>
+                "рыбой" для текстов на латинице с начала XVI века.</p>
+            </div>
+                <button class="how-work_button" type="button">
+                    <span class="visually-hidden">Открывает видео</span> 
+                </button>
         </section>
         <section class="my-works-gallery">
             <h2 class="section-title">Галерея моих работ</h2>

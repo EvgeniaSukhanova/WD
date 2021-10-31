@@ -1,6 +1,7 @@
 :root {
    --basic-black:#000000;
    --basic-grey:#727272;
+   --middle-grey:#C4C4C4;
    --light-grey:#EEEFF1;
    --dark-grey:#5F5D5D;
    --basic-blue:#34547A;
@@ -31,9 +32,47 @@ body {
     line-height: 37px;
 }
 
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.container-small {
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+}
+
+.btn-primary {
+    background-color: var(--basic-blue);
+    text-decoration: none;
+    color:var(--basic-white);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.btn-big {
+    font-size: 16px;
+    line-height: 26px;
+    padding: 24px 40px;
+}
+
 /* ------ header ------ */
 .main-header {
-    background-color: var(--light-grey)
+    background-color: var(--light-grey);
+    padding: 54px 0 0;    
 }
 .main-logo {
     color: var(--basic-blue);
@@ -43,10 +82,21 @@ body {
     text-decoration: none;
 }
 
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .main-nav-list {
+    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+.main-nav-item + .main-nav-item {
+    margin-left: 42px;
 }
 
 .main-nav-link {
@@ -59,55 +109,170 @@ body {
 
 /* ------ promo ------ */
 .promo {
+    padding: 130px 0 146px;
     background-color: var(--light-grey);
 }
 
 .promo-title {
     font-size: 48px;
     line-height: 79px;
+    margin: 0 0 40px;
 }
 
-.promo-write-me {
-    color:var(--basic-white);
-    letter-spacing: 0.1em;
-    background-color: var(--basic-blue);
-    text-decoration: none;
-    text-transform: uppercase;
+.promo-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.promo-image,
+.promo-content,
+.skills-content,
+.skills-img {
+    flex: 0 0 50%;
+}
+
+.promo-image {
+    text-align: center;
+}
+
+.promo-image img {
+    display: block;
+    margin: 0 auto;
+}
+
+.promo-content {
+    padding: 0 0 0 10px;
+}
+
+.promo-text {
+    margin: 0 0 52px;
 }
 /* ------ !promo ------ */
 
-
-/* ------ advantages ------ */
-.adv-list {
-    color: var(--basic-white);
-    background-color: var(--basic-blue);
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+/* ------ about-me ------ */
+.about-me {
+    text-align: center;
+    margin: 119px auto 100px;
 }
 
-.adv-link-40 {
+/* ------ !about-me ------ */
+
+
+/* ------ advantages ------ */
+
+.advantages {
+    background-color: var(--basic-blue);
+    padding: 100px 0;
+}
+
+.adv-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+   }
+
+.advantages-item {
+    display: flex;
+    color: var(--basic-white);
+    flex: 0 0 auto;
+    margin: 10px 0 0;
+}
+
+.advantages-item + .advantages-item {
+    margin-left: 10px;
+}
+
+.advantages-item > span {
+    margin: 0 0 0 20px;
+}
+
+.advantages-strong {
     font-weight: 500;
     font-size: 21px;
     line-height: 25px;
 }
 /* ------ !advantages ------ */
 
-
-/* ------ process ------ */
-.process {
-    background-color:var(--light-grey)
-}
-/* ------ !process ------ */
-
-
 /* ------ skills ------ */
+.skills {
+    margin: 102px auto;
+    display: flex;
+    align-items: center;
+}
+
+.skills-img {
+    margin-left: 32px;
+}
+
+.skills-img img {
+    display: block;
+}
+
+.skills-title {
+    margin: 0 0 40px;
+}
+
 .skills-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+
+.skills-list li {
+    margin: 0 0 28px;
+}
+
+.progress {
+    background-color: var(--middle-grey);
+    max-width: 446px;
+    height: 4px;
+}
+
+.progress div {
+    background-color: var(--basic-blue);
+    height: 100%;
+}
 /* ------ !skills ------ */
+  
+
+/* ------ how-work ------ */
+.how-work {
+    background-color:var(--light-grey);
+    padding: 100px 0;
+}
+
+.how-work_content {
+    text-align: center;
+}
+
+.how-work_button {
+    max-width: 1110px;
+    width: 100%;
+    height: 600px;
+    cursor: pointer;
+    border: none;
+    background: url(../img/background.jpg) center / cover no-repeat;
+    display: block;
+    margin: 50px auto 0;
+    position: relative;
+}
+
+.how-work_button::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: url(../img/Vector.png) center no-repeat;
+    transform: translate(-50%, -50%);
+}
+/* ------ !how-work ------ */
+
+
+
 
 /* ------ my-works-gallery ------ */
 .my-works-gallery-list {
