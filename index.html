@@ -16,10 +16,10 @@
             <a class="main-logo" href="#">WD</a>
            <ul class="main-nav-list">
                <li class="main-nav-item"><a class="main-nav-link active" href="#">Главная</a></li>
-               <li class="main-nav-item"><a class="main-nav-link"href="#">Об авторе</a></li>
-               <li class="main-nav-item"><a class="main-nav-link"href="#">Работы</a></li>
-               <li class="main-nav-item"><a class="main-nav-link"href="#">Процесс</a></li>
-               <li class="main-nav-item"><a class="main-nav-link"href="#">Контакты</a></li>
+               <li class="main-nav-item"><a class="main-nav-link" href="#">Об авторе</a></li>
+               <li class="main-nav-item"><a class="main-nav-link" href="#">Работы</a></li>
+               <li class="main-nav-item"><a class="main-nav-link" href="#">Процесс</a></li>
+               <li class="main-nav-item"><a class="main-nav-link" href="#">Контакты</a></li>
            </ul> 
         </nav>  
     </header>
@@ -143,41 +143,49 @@
               </ul>                                                                              
         </section>
         <section class="our-clients">
-            <h2 class="section-title">Наши клиенты</h2>
-            <ul class="our-clients-list">
-                <li><a href="#" target="blanc"><img src="./img/microsoft.png" width="255" height="120" alt="Логотип компании"></a></li>
-                <li><a href="#" target="blanc"><img src="./img/microsoft.png" width="255" height="120" alt="Логотип компании"></a></li>
-                <li><a href="#" target="blanc"><img src="./img/microsoft.png" width="255" height="120" alt="Логотип компании"></a></li>
-                <li><a href="#" target="blanc"><img src="./img/microsoft.png" width="255" height="120" alt="Логотип компании"></a></li>
+            <h2 class="section-title visually-hidden">Наши клиенты</h2>
+            <ul class="clients-list">
+                <li class="clients-link"><a href="#" target="blanc"><img src="./img/microsoft.png" width="255" height="120" alt="Логотип компании"></a></li>
+                <li class="clients-link"><a href="#" target="blanc"><img src="./img/microsoft.png" width="255" height="120" alt="Логотип компании"></a></li>
+                <li class="clients-link"><a href="#" target="blanc"><img src="./img/microsoft.png" width="255" height="120" alt="Логотип компании"></a></li>
+                <li class="clients-link"><a href="#" target="blanc"><img src="./img/microsoft.png" width="255" height="120" alt="Логотип компании"></a></li>
             </ul>
         </section>
         <section class="main-form">
-            <h2 class="section-title">Хотите веб-сайт?</h2>
-            <p>Lorem Ipsum - это текст-"рыба", часто используемый
+            <div class="container-small form-content">
+                <h2 class="section-title form-title">Хотите веб-сайт?</h2>
+                <p class="form-text">Lorem Ipsum - это текст-"рыба", часто используемый
                 в печати и вэб-дизайне. Lorem Ipsum является стандартной
                  "рыбой" для текстов на латинице с начала XVI века.</p>
-            <form class="main-form-window" action="" method="get">
-               <label for="name">Ваше имя</label>
-               <input type="text" name="name" placeholder="Ваше имя" id="name">
-               <label for="mail">Ваш e-mail</label>
-               <input type="email" name="mail" placeholder="Ваш e-mail" id="mail">
-               <label for="message">Ваше сообщение</label>
-               <textarea name="message" id="message" cols="30" rows="10">Сообщение</textarea>
-               <button class="main-form-but-sbmt" type="submit">Отправить</button>
+            </div>
+            <form action="" method="get">
+               <div class="form-window_one">
+                    <label class="visually-hidden" for="name">Ваше имя</label>
+                    <input class="form-input_one" type="text" name="name" placeholder="Ваше имя" id="name">
+                    <label class="visually-hidden" for="mail">Ваш e-mail</label>
+                    <input class="form-input_one" type="email" name="mail" placeholder="Ваш e-mail" id="mail">
+                </div>
+                <div class="form-window_two">
+                    <label class="visually-hidden" for="message">Ваше сообщение</label>
+                    <textarea class="form-input_two" name="message" id="message" cols="30" rows="10" placeholder="Сообщение"></textarea>
+                </div>
+               <button class="form-btn" type="submit">Отправить</button>
             </form>     
         </section>
     </main>
     <footer class="footer">
-        <p class="footer-name">Иванов Иван</p>
-        <p>(с) 2018. Все права защищены.</p>
-        <ul class="footer-social-media-list">
-            <li>
+        <div class="footer-left">
+            <p class="footer-name">Иванов Иван</p>
+            <p>(с) 2018. Все права защищены.</p>
+        </div>
+        <ul class="footer-socialmedia_list">
+            <li class="footer-socialmedia_link">
                 <a href="#" target="blanc"><img src="./img/vk-social-network-logo.png" width="43.75" height="22.82" alt="Иконка вКонтакте"></a>
             </li>
-            <li>
+            <li class="footer-socialmedia_link">
                 <a href="#" target="blanc"><img src="./img/vk-social-network-logo.png" width="43.75" height="22.82" alt="Иконка вКонтакте"></a>
             </li>
-            <li>
+            <li class="footer-socialmedia_link">
                 <a href="#" target="blanc"><img src="./img/vk-social-network-logo.png" width="43.75" height="22.82" alt="Иконка вКонтакте"></a>
             </li>
         </ul>
