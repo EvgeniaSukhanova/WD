@@ -24,6 +24,11 @@ html {
 body {
     margin: 0;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
     
 .section-title {
     color: var(--basic-black);
@@ -105,6 +110,12 @@ body {
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
+
+.main-nav-link.active,
+.main-nav-link:hover
+.main-nav-link:focus {
+    color: var(--basic-blue);
+} 
 /* ------ !header ------ */
 
 /* ------ promo ------ */
@@ -275,11 +286,46 @@ body {
 
 
 /* ------ my-works-gallery ------ */
-.my-works-gallery-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.gallery {
+    padding: 28px 0 0;
 }
+
+.gallery-list {
+    list-style-type: none;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    width: 25%;
+    position: relative;
+}
+
+.gallery-item img{
+    display: block;
+}
+
+.gallery-link:hover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(52, 84, 122, 0.8);
+}
+
+.gallery-link:hover::after {
+    content: url(../img/eye.png);
+    position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+}
+
 /* ------ !my-works-gallery ------ */
 
 
